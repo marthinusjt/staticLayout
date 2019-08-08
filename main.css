@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.TopNews {
+    font-family: 'Graphik',Helvetica,Arial,sans-serif;
+    font-size: 1.125rem;
+    color: #5e6573;
+    text-align: center;
+}
