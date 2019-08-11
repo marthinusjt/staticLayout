@@ -6,44 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stream TV and Movies Live and Online | Hulu</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Top News -->
-
-    <div class="TopNews">
-        <span>NEW! Watch live sports, news and entertainment on Hulu. Learn More</span>
-        <button id="TopNews_Button">x</button>
-    </div>
-
-
-    <!-- <div id="mainPic">
-        <img src="assets/huluLoginBackground.jpg">
-    </div>
-    <div class="topSticky">
-        <p id="trial">START YOUR FREE TRIAL</p>
-        <p id="logIn">LOG IN</p>
-    </div>
-    <div class="topPage">
-        <p>All Your TV In One Place</p>
-        <br>
-        <p>Watch thousands of shows and movies, with plans starting </p>
-        <p>at $5.99/month.</p>
-        <br>
-        <p>HBO<sup>®</sup>, SHOWTIME<sup>®</sup>, CINEMAX<sup>®</sup> and STARZ<sup>®</sup> available as add-ons.</p>
-        <br>
-        <p>START YOUR FREE TRIAL</p>
-        <br>
-        <p>Free trial available for new and eligible returning subscribers only.</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p>PLAN OPTIONS</p>
-    </div>
-    <div>
-        <img src="huluPics/huluContent.jpg">
-    </div> -->
     
+    <div class="topBox">    
+        <div class="topNews">NEW! Watch live sports, news and entertainment on Hulu.
+            <a href="blank" class="topLink">Learn More</a>
+        </div>
+        <button class="topButton">×</button>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    
+    <div class="header" id="navHeader">
+        <div class="navContainer">
+            <div id="hulu">hulu</div>
+            <div class="navTrial">
+                <button class="trialButton">START YOUR FREE TRIAL</button>
+                <a href="blank" class="login">LOG IN</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top View -->
+
+    <div class="topView">
+        <div class="masterView">
+            <div class="backgroundImage"></div>
+            <div class="signupInfo">
+                <div class="headline">All Your TV In One Place</div>
+                <div class="message1">Watch thousands of shows and movies, with plans starting at $5.99/month.                    </div>
+                <div class="message2">HBO®, SHOWTIME®, CINEMAX® and STARZ® available as add-ons.</div>
+                <div class="button2Layout">
+                    <button class="trial2Button">START YOUR FREE TRIAL</button>
+                </div>
+                <div class="message3">Free trial available for new and eligible returning subscribers only.</div>
+            </div>
+            <div class="planOptions">
+                <div class="planText">PLAN OPTIONS</div>
+                <a class="circleArrow">
+                    <img src="./assets/whiteArrowDown.png" class="arrow">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Second View -->
+    
+    <div class="secondView">
+        <div class="backgroundImageSecondView"></div> 
+    </div>
+
+        <!-- JS for sticky Nav Bar -->
+    <script src="main.js"></script>
 </body>
 </html>

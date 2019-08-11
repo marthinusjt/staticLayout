@@ -1,12 +1,291 @@
 body {
-    margin: 0;
-    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0px;
+    height: 100%;
+    width: 100vw;
     overflow-x: hidden;
+    background-color: #f5f6f7;
+    color: #292b2c;
+    display: flex;
+    flex-direction: column;
 }
 
-.TopNews {
-    font-family: 'Graphik',Helvetica,Arial,sans-serif;
-    font-size: 1.125rem;
+/* TOP BOX NEWS */
+
+.topBox {
+    display: flex;
+    height: 74px;
     color: #5e6573;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.topNews {
+    font-size: 1.5rem;
+    padding: 0 64px;
+    letter-spacing: 0.1px;
+    font-weight: 100;
+}
+
+.topLink {
+    color: #5e6573;
+    text-decoration: none;
+    border-bottom: 1px solid #5e6573;
+    cursor: pointer;    
+}
+
+.topButton {
+    align-items: flex-start;
+    position: absolute;
+    right: 15px;
+    top: -15px;
+    border: 0;
+    background-color: transparent;
+    font-size: 75px;
+    font-weight: 100;
+    cursor: pointer;
+    color: #868d9b;
+    padding: 0;
+}
+
+/* STICKY NAV BAR */
+.header {
+    position: absolute;
+    width: 100vw;
+    top: 74px;
+    left: 0;
+    right: 0;
+    z-index: 40;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.navContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 0px 40px;
+    background-color: transparent;
+    justify-content: space-between;
+}
+
+#hulu {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 60px;
+    height: 66px;
+    margin: 0px 35px 0px 0px;
+    padding: 8px 0px 0px;
+}
+
+.navTrial {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: 80px;
+}
+
+/* START YOUR FREE TRIAL */
+.trialButton {
+    background: black;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    text-align: center;
+    margin: 4px 32px 0px 0px;
+    padding: 20px 20px;
+    color: #f5f6f7;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: none;
+}
+
+/* LOGIN */
+.login {
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1px;
+    margin: 4px 15px;
+    border-bottom: 5px solid transparent;
+    background: transparent;
+    padding: 31px 0 17px;
+    display: block;
+    text-decoration-line: none;
+    
+}
+
+/* TOP VIEW */
+
+.topView {
+    box-sizing: inherit;
+}
+
+.masterView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center top;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    padding: 60px 20px 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.backgroundImage {
+    background-image: url(./assets/huluLoginBackground.jpg);
+    background-size: cover;
+    background-position: right bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.signupInfo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.3;
+    text-align: center;
+    color: rgb(234, 231, 225);
+    z-index: 0;
+    width: 690px;
+    padding: 60px 40px;
+}
+
+.headline {
+    font-size: 56px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    line-height: 64px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.message1 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    margin-top: 32px;
+}
+
+.message2 {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.button2Layout {
+    margin-top: 25.6px;
+    display: flex;
+    justify-content: center;
+}
+
+.trial2Button {
+    cursor: pointer;
+    display: inline-block;
+    background: #fcfcfc;
+    color: #1e1e1e;
+    align-items: flex-start;
+    height: 56px;
+    padding: 0px 32px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 14px;
+    font-style: normal;
+}
+
+.message3 {
+    margin-top: 16px;
+    align-self: center;
+    opacity: 0.6;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 16px;
+}
+
+.planOptions {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    line-height: 1.3;
+    z-index: 0;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 670px;
+    padding-top: 0;
+}
+
+.planText {
+    color: #ffffff;
+    margin: 0px auto;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.circleArrow {
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #f9f7f9;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    line-height: 66px;
+    width: 66px;
+    height: 66px;
+    text-decoration: none;
+}
+
+.arrow {
+    vertical-align: middle;
+    border-style: none;
+    width: 25%;
+    height: 35%;
+}
+
+/* SECOND VIEW */
+
+.secondView {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.backgroundImageSecondView {
+    background-image: url(./assets/huluContent.jpg);
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
 }
